@@ -43,3 +43,14 @@ goenv rehash
 # check current version
 go version
 ```
+
+### Set GOPATH
+Go言語を利用するためには GOPATH という環境変数の設定が必要です。
+
+```
+vim ~/.zshprofile
+
+# 以下を追加
+GOPATH="$HOME/go"
+export GOPATH
+```
