@@ -2,7 +2,6 @@
 
 ## Installation Golang
 まずはじめにgoenvをインストールしたほうが良いでしょう。
-At first, We shoud install goenv.
 
 ## Installation goenv
 
@@ -31,6 +30,17 @@ goenv versions
 勉強用であれば基本的に最新のバージョンをインストールするか、テキストと同じ内容のバージョンをインストールするのがいい気がします。
 
 ```
+# rcファイルにパスを通すコマンドを追記する
+vim ~/.zshrc
+
+## 以下の内容を追記
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+
+# 追記した内容を読み込んで反映
+source ~/.zshrc
+
 # install 
 goenv install 1.11.4
 
