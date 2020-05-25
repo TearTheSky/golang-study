@@ -28,7 +28,16 @@ func switchingWithTypes(input interface{}){
 	}
 }
 
+func errorHandling(errorSwitch bool) (bool, string) {
+	if errorSwitch {
+		return true, "I made an error!"
+	} else {
+		return false, ""
+	}
+}
+
 func main(){
+	//文末のセミコロン
 	implicitSemiCollon()
 
 	// 配列やスライスの最後にはセミコロンを書く必要がある。
@@ -45,4 +54,18 @@ func main(){
 	typeCheckCatalist := 4
 	switchingWithTypes(typeCheckCatalist)
 
+	// エラー処理
+	// 本当はこれだけでは全然足りないのでWeb上から最新の書き方をキャッチアップすること
+	// 通常の仕様だけでは簡素すぎて足りないので github.com/pkg/errors を使う
+	errorSwitch := true
+	result, err := errorHandling(errorSwitch)
+	if (err != "") {
+		fmt.Printf("result is : %t\n", result)		
+		fmt.Println(err)
+		fmt.Println("error occured !")
+	} else {
+		fmt.Printf("result is : %t\n", result)		
+		fmt.Println(err)
+		fmt.Println("we have no error !")
+	}
 }
