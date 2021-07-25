@@ -1,0 +1,13 @@
+total 4680
+drwxr-xr-x  10 tearthesky  staff   320B  7 25 21:58 .
+drwxr-xr-x   4 tearthesky  staff   128B  7 25 19:59 ..
+-rw-r--r--   1 tearthesky  staff   223B  7 25 21:55 arg.go
+-rw-r--r--   1 tearthesky  staff   424B  7 25 20:45 exec.go
+-rw-r--r--   1 tearthesky  staff    27B  7 25 19:59 go.mod
+-rw-r--r--   1 tearthesky  staff   733B  7 25 21:57 initout.go
+-rw-r--r--   1 tearthesky  staff     0B  7 25 21:58 ls-1627217927-stdlerr.log
+-rw-r--r--   1 tearthesky  staff     0B  7 25 21:58 ls-1627217927-stdlout.log
+-rw-r--r--   1 tearthesky  staff   611B  7 25 20:53 main.go
+-rwxr-xr-x   1 tearthesky  staff   2.3M  7 25 21:57 processlog
+exit status 0
+wall clock time=30.607741ms system time=0x10c1020 user time=2.007ms
